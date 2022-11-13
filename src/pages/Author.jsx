@@ -23,8 +23,8 @@ const Author = () => {
     setAuthor(data);
     setLoading(false);
   }, [authorId]);
-
   useEffect(() => {
+    window.scrollTo(0, 0);
     getAuthor();
   }, [getAuthor]);
 
