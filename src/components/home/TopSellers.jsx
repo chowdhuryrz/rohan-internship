@@ -37,7 +37,7 @@ const TopSellers = () => {
               {loading ? (
                 <>
                   {new Array(12).fill(0).map((_, index) => (
-                    <li key={index}>
+                    <li data-aos="fade-in" data-aos-delay="200" key={index}>
                       <div className="author_list_pp">
                         <Skeleton width={48} height={52} borderRadius={1000} />
                       </div>
@@ -57,7 +57,7 @@ const TopSellers = () => {
                       { price, authorId, authorImage, id, authorName },
                       index
                     ) => (
-                      <li key={index}>
+                      <li data-aos="fade-in" data-aos-delay="200" key={index}>
                         <div className="author_list_pp">
                           <Link to={`/author/${authorId}`}>
                             <img

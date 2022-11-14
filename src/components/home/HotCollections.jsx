@@ -65,7 +65,12 @@ const HotCollections = () => {
           {!loading ? (
             <OwlCarousel className="slider-items owl-carousel" {...settings}>
               {new Array(4).fill(0).map((_, index) => (
-                <div className="" key={index}>
+                <div
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                  className=""
+                  key={index}
+                >
                   <div className="nft_coll">
                     <div className="nft_wrap">
                       <Skeleton width={315} height={250} borderRadius={1} />
@@ -95,7 +100,12 @@ const HotCollections = () => {
                   { id, nftId, authorId, authorImage, title, code, nftImage },
                   index
                 ) => (
-                  <div className="" key={index}>
+                  <div
+                    data-aos="fade-in"
+                    data-aos-delay="200"
+                    className=""
+                    key={index}
+                  >
                     <div className="nft_coll">
                       <div className="nft_wrap">
                         <Link to={`/item-details/${nftId}`}>

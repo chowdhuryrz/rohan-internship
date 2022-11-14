@@ -65,7 +65,12 @@ const NewItems = () => {
           {!loading ? (
             <OwlCarousel className="slider-items owl-carousel" {...settings}>
               {new Array(4).fill(0).map((_, index) => (
-                <div className="" key={index}>
+                <div
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                  className=""
+                  key={index}
+                >
                   <div className="nft__item">
                     <div className="nft__item_wrap">
                       <Skeleton width={340} height={340} borderRadius={5} />
@@ -101,7 +106,12 @@ const NewItems = () => {
                   },
                   index
                 ) => (
-                  <div className="" key={index}>
+                  <div
+                    data-aos="fade-in"
+                    data-aos-delay="200"
+                    className=""
+                    key={index}
+                  >
                     <div className="nft__item">
                       <div className="author_list_pp">
                         <Link
